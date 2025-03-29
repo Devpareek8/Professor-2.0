@@ -21,9 +21,9 @@ BATCH_FILES = {}
 join_db = JoinReqs
 
 @Client.on_message(filters.command("start") & filters.incoming)
-async def start(client, message):  # <- Yahan extra space hata diya
-    await message.react(emoji="🔥")  # <- Yeh bhi sahi indent hona chahiye
-     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+async def start(client, message):
+    await message.react(emoji="🔥")
+    if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
             InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
