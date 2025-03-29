@@ -24,7 +24,7 @@ from pyrogram import Client, filters
 import random
 
 @Client.on_message(filters.text & ~filters.bot)
-async def ar(c, m): await m.react(random.choice("🔥❤️😂👍💀🥳💯😎🙌"))
+async def ar(c, m): await m.react(random.choice("🔥"))
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
             InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
