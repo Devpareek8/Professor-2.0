@@ -1,4 +1,4 @@
-pyrofork==2.3.45
+pymongo[srv]==4.5.0
 tgcrypto 
 requests 
 bs4 
